@@ -1,1 +1,156 @@
-sdkfñaklsf
+     * {
+             margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        /* ===== HEADER DESPLEGABLE ===== */
+        header {
+            position: fixed;
+            top: -120px;
+            left: 0;
+            width: 100%;
+            height: 120px;
+            background: rgba(0, 0, 0, 0.0.5);
+            color: white;
+            transition: top 0.4s ease;
+            z-index: 1000;
+        }
+
+        body:hover header {
+            top: 0;
+        }
+
+        .nav-container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+
+        /* ===== LOGO ===== */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            width: 200px;
+            height: 150px;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            letter-spacing: 3px;
+        }
+
+        /* ===== MENÚ ===== */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #c59d5f;
+        }
+
+        /* ===== FONDO PRINCIPAL ===== */
+        .fondo {
+            height: 100vh;
+            background-image: url("https://img.freepik.com/foto-gratis/mujer-bolsa-ecologica-frutas-lado-pais_1303-15239.jpg?semt=ais_user_personalization&w=740&q=80");
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay {
+            background: rgba(0,0,0,0.55);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .overlay h2 {
+            color: white;
+            font-size: 48px;
+            letter-spacing: 5px;
+        }
+
+        /* Pie de pagina */
+    .footer {
+    background-color: #111;
+    color: #fff;
+    padding: 40px 0 20px;
+    font-family: Arial, sans-serif;
+    }
+
+    .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    }
+
+    .footer h2, .footer h3 {
+    margin-bottom: 10px;
+    }
+
+    .footer p {
+    font-size: 14px;
+    color: #ccc;
+    }
+
+    .footer-links ul {
+    list-style: none;
+    padding: 0;
+    }
+
+    .footer-links ul li {
+    margin-bottom: 8px;
+    }
+
+    .footer a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    }
+
+    .footer a:hover {
+    color: #fff;
+    }
+
+    .footer-social a {
+    display: block;
+    margin-bottom: 8px;
+    }
+
+    .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 13px;
+    color: #aaa;
+    }
