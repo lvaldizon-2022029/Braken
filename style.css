@@ -9,7 +9,6 @@
             margin: 0;
         }
 
-        /* ===== HEADER DESPLEGABLE ===== */
         header {
             position: fixed;
             top: -120px;
@@ -17,7 +16,7 @@
             width: 100%;
             height: 120px;
             background: rgba(0, 0, 0, 0.0.5);
-            color: white;
+            color: #ccd0cf;
             transition: top 0.4s ease;
             z-index: 1000;
         }
@@ -34,7 +33,6 @@
             padding: 0 50px;
         }
 
-        /* ===== LOGO ===== */
         .logo {
             display: flex;
             align-items: center;
@@ -51,7 +49,6 @@
             letter-spacing: 3px;
         }
 
-        /* ===== MENÚ ===== */
         nav ul {
             list-style: none;
             display: flex;
@@ -59,7 +56,7 @@
         }
 
         nav ul li a {
-            color: white;
+            color:#ccd0cf;
             text-decoration: none;
             font-size: 15px;
             font-weight: bold;
@@ -67,13 +64,12 @@
         }
 
         nav ul li a:hover {
-            color: #c59d5f;
+            color: #7b7f85;
         }
 
-        /* ===== FONDO PRINCIPAL ===== */
         .fondo {
             height: 100vh;
-            background-image: url("https://img.freepik.com/foto-gratis/mujer-bolsa-ecologica-frutas-lado-pais_1303-15239.jpg?semt=ais_user_personalization&w=740&q=80");
+            background-image: url("https://images.unsplash.com/photo-1623446713256-599eecb668ac?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDI1fHx8ZW58MHx8fHx8");
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -83,7 +79,7 @@
         }
 
         .overlay {
-            background: rgba(0,0,0,0.55);
+            background: rgba(0,0,0,0.5);
             width: 100%;
             height: 100%;
             display: flex;
@@ -92,15 +88,55 @@
         }
 
         .overlay h2 {
-            color: white;
+            color: #ccd0cf;
             font-size: 48px;
             letter-spacing: 5px;
         }
 
-        /* Pie de pagina */
+
+  .fondo2 {
+    padding: 60px 20px;
+    background-color: #ccd0cf;
+    width: 100%;
+    min-height: 100vh; 
+    box-sizing: border-box; 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url("imagenes/priscilla-du-preez-GNJbBgPP2VU-unsplash.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    position: relative; 
+}
+    .fondo2 > * {
+        position: relative;
+        z-index: 2;
+    }
+
+
+.fondo2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+}
+        .intro {
+            color: #ccd0cf;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
     .footer {
-    background-color: #111;
-    color: #fff;
+    background-color: #161617;
+    color: #ccd0cf;
     padding: 40px 0 20px;
     font-family: Arial, sans-serif;
     }
@@ -119,7 +155,7 @@
 
     .footer p {
     font-size: 14px;
-    color: #ccc;
+    color: #ccd0cf;
     }
 
     .footer-links ul {
@@ -132,13 +168,13 @@
     }
 
     .footer a {
-    color: #ccc;
+    color: #ccd0cf;
     text-decoration: none;
     font-size: 14px;
     }
 
     .footer a:hover {
-    color: #fff;
+    color:#ccd0cf;
     }
 
     .footer-social a {
@@ -152,5 +188,6 @@
     border-top: 1px solid #333;
     padding-top: 10px;
     font-size: 13px;
-    color: #aaa;
+    color: #ccd0cf;
     }
+
