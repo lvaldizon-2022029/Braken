@@ -9,7 +9,6 @@ body {
     background-color: #161617;
 }
 
-/* ===== HEADER ===== */
 header {
     position: fixed;
     top: -120px;
@@ -56,7 +55,7 @@ nav ul li a:hover {
     color: #7b7f85;
 }
 
-/* ===== PORTADA ===== */
+
 .fondo {
     height: 60vh;
     background-image: url("https://i.pinimg.com/736x/2f/b6/7c/2fb67c7f19a53087bac2d39a11de5d2b.jpg");
@@ -79,7 +78,7 @@ nav ul li a:hover {
     letter-spacing: 5px;
 }
 
-/* ===== ACCESORIOS ===== */
+
 .accesorios {
     padding: 80px 20px;
     color: #ccd0cf;
@@ -94,7 +93,7 @@ nav ul li a:hover {
     letter-spacing: 3px;
 }
 
-/* CATEGORÍA */
+
 .categoria {
     margin-bottom: 60px;
 }
@@ -106,7 +105,6 @@ nav ul li a:hover {
     padding-bottom: 10px;
 }
 
-/* GRID DE PRODUCTOS */
 .productos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -133,7 +131,6 @@ nav ul li a:hover {
     color: #a9acab;
 }
 
-/* ===== FOOTER ===== */
 .footer {
     background-color: #161617;
     color: #ccd0cf;
