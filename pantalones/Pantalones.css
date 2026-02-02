@@ -18,7 +18,7 @@ header {
     height: 120px;
     background: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
-    color: white;
+    color: #ccd0cf;
     transition: top 0.4s ease;
     z-index: 1000;
 }
@@ -55,10 +55,11 @@ body:hover header {
 
 
 nav a {
-    color: white;
+    color: #ccd0cf;
     text-decoration: none;
     margin-left: 30px;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 /*Hero*/
