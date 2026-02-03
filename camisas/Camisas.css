@@ -89,6 +89,57 @@ nav a {
     background: rgba(0, 0, 0, 0.45);
 }
 
+.info-texto {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    max-width: 70ch; 
+    margin: 0 auto;  
+    padding: 40px 20px;
+    z-index: 1;      
+}
+
+.info-texto h2 {
+    font-size: clamp(2rem, 5vw, 3rem); 
+    font-weight: 800;
+    letter-spacing: -0.02em; 
+    line-height: 1.1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.info-texto p {
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    line-height: 1.6;
+    font-weight: 400;
+    opacity: 0.85;
+    text-wrap: balance; 
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+
+.info-texto h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #3498db; 
+    margin: 15px auto 0;
+    border-radius: 2px;
+}
+.info {
+    height: 80vh;
+    background-image: url("img/info.png"); 
+    background-size: 10%;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
 .hero-texto {
     position: relative;
     text-align: center;
