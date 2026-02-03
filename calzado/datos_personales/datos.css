@@ -1,0 +1,49 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.personal {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.info {
+    text-align: center;
+}
+
+.perasonal-title,
+.Cosas-que-me-gustan {
+    color: #00ffcc;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+
+.info p {
+    margin: 6px 0;
+    font-size: 16px;
+    color: #dddddd;
+}
+
+.personal:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
