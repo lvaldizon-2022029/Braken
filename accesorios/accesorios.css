@@ -55,9 +55,13 @@ nav ul li a:hover {
     color: #7b7f85;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .fondo {
     height: 60vh;
-    background-image: url("https://i.pinimg.com/736x/2f/b6/7c/2fb67c7f19a53087bac2d39a11de5d2b.jpg");
+    background-image: url("img/accesorios-hombre-relajados.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -77,6 +81,10 @@ nav ul li a:hover {
     letter-spacing: 5px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .accesorios {
     padding: 80px 20px;
     color: #ccd0cf;
@@ -91,6 +99,10 @@ nav ul li a:hover {
     letter-spacing: 3px;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 .categoria {
     margin-bottom: 60px;
 }
@@ -118,7 +130,11 @@ nav ul li a:hover {
 
 .producto img {
     width: 100%;
+<<<<<<< HEAD
     height: 160px;     
+=======
+    height: 160px;      
+>>>>>>> main
     object-fit: cover;
 }
 
@@ -128,7 +144,10 @@ nav ul li a:hover {
     color: #a9acab;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 .footer {
     background-color: #161617;
     color: #ccd0cf;

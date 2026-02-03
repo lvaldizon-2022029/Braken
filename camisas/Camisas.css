@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url("img/background.avif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(8px);
+    color: #ccd0cf;
+    transition: top 0.4s ease;
+    z-index: 1000;
+}
+
+body:hover header {
+    top: 0;
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo img {
+    height: 150px;
+    width: auto;
+}
+
+.logo h1 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: white;
+}
+
+
+nav a {
+    color: #ccd0cf;
+    text-decoration: none;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.hero {
+    height: 80vh;
+    background-image: url("img/hero.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-editorial::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-texto {
+    position: relative;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-texto h2 {
+    font-size: 48px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.catalogo {
+    display: flex;
+    padding: 60px;
+    gap: 40px;
+}
+
+.destacado {
+    width: 40%;
+    position: relative;
+}
+
+.destacado h2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: white;
+    font-size: 50px;
+}
+
+.productos {
+    display: flex;
+    gap: 40px;
+}
+
+.producto {
+    text-align: center;
+}
+
+.producto p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.producto span {
+    font-size: 16px;
+}
+
+.producto img {
+    background: transparent; 
+}
+
+.img-placeholder {
+    width: 220px;
+    height: 300px;
+    background: #ccc;
+}
+
+.grande {
+    width: 100%;
+    height: 500px;
+    background-image: url("img/destacado.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.producto-img {
+    width: 220px;
+    height: 300px;
+    object-fit: contain;
+    background-color: #ffffff;
+}
+
+.extra {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px;
+}

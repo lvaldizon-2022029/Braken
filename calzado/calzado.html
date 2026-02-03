@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Calzado | BRAKEN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calzado.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../index/imagenes/logo-removebg-preview.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <h1>BRAKEN</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="calzado.html" class="active">Calzado</a></li>
+                    <li><a href="../camisas/Camisas.html">Ropa superior</a></li>
+                    <li><a href="../pantalones/Pantalones.html">Ropa Inferior</a></li>
+                    <li><a href="../accesorios/accesorios.html">Accesorios</a></li>
+                    <li><a href="../sombreros/sombreros.html">Sombreros</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero-calzado">
+        <div class="hero-overlay">
+            <h2>CALZADO URBANO</h2>
+            <p>Descubre las mejores marcas y diseños para complementar tu estilo</p>
+        </div>
+    </section>
+
+    <section class="filtros-marcas">
+        <div class="container">
+            <h3>Filtrar por marca</h3>
+            <div class="marcas-container">
+                <a href="#todas" class="marca-btn active">Todas</a>
+                <a href="#nike" class="marca-btn">Nike</a>
+                <a href="#adidas" class="marca-btn">Adidas</a>
+                <a href="#puma" class="marca-btn">Puma</a>
+                <a href="#vans" class="marca-btn">Vans</a>
+                <a href="#converse" class="marca-btn">Converse</a>
+                <a href="#new-balance" class="marca-btn">New Balance</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="productos-calzado">
+        <div class="container">
+            <h2 class="section-title">NUESTRA COLECCIÓN DE CALZADO</h2>
+            <p class="section-subtitle">Explora nuestros modelos exclusivos y encuentra el par perfecto para ti</p>
+            
+            <div class="productos-grid">
+                <!-- Producto 1 - Nike -->
+                <div class="producto-card" id="nike-1">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Nike Air Max 270">
+                        <span class="badge-nuevo">Nuevo</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-marca">Nike</h3>
+                        <h4 class="producto-modelo">Air Max 270</h4>
+                        <p class="producto-descripcion">Zapatillas con amortiguación Air Max para máxima comodidad</p>
+                        <div class="producto-especificaciones">
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio-actual">Q850.95</span>
+                            <span class="precio-anterior"><Q1200 class="78"></Q1200></span>
+                        </div>
+                        <!-- Botón que activa el modal -->
+                        <a href="#modal-nike-1" class="btn-detalles">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 2 - Adidas -->
+                <div class="producto-card" id="adidas-1">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80" alt="Adidas Ultraboost 22">
+                        <span class="badge-oferta">-15%</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-marca">Adidas</h3>
+                        <h4 class="producto-modelo">Ultraboost 22</h4>
+                        <p class="producto-descripcion">Tecnología Boost para una amortiguación reactiva</p>
+                        <div class="producto-especificaciones">
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio-actual">Q500.75</span>
+                        </div>
+                        <a href="#modal-adidas-1" class="btn-detalles">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 3 - Puma -->
+                <div class="producto-card" id="puma-1">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Puma RS-X">
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-marca">Puma</h3>
+                        <h4 class="producto-modelo">RS-X</h4>
+                        <p class="producto-descripcion">Diseño futurista con suela RS para un estilo audaz</p>
+                        <div class="producto-especificaciones">
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio-actual">Q489.60</span>
+                        </div>
+                        <a href="#modal-puma-1" class="btn-detalles">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 4 - Vans -->
+                <div class="producto-card" id="vans-1">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=698&q=80" alt="Vans Old Skool">
+                        <span class="badge-popular">Popular</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-marca">Vans</h3>
+                        <h4 class="producto-modelo">Old Skool</h4>
+                        <p class="producto-descripcion">Clásico diseño con la icónica franja lateral</p>
+                        <div class="producto-especificaciones">
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio-actual">Q287.56</span>
+                        </div>
+                        <a href="#modal-vans-1" class="btn-detalles">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 5 - Nike 2 -->
+                <div class="producto-card" id="nike-2">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80" alt="Nike Air Force 1">
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-marca">Nike</h3>
+                        <h4 class="producto-modelo">Air Force 1</h4>
+                        <p class="producto-descripcion">El clásico de baloncesto que se convirtió en ícono urbano</p>
+                        <div class="producto-especificaciones">
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio-actual">Q1090.99</span>
+                        </div>
+                        <a href="#modal-nike-2" class="btn-detalles">Ver detalles</a>
+                    </div>
+                </div>
+
+                <!-- Producto 6 - Adidas 2 -->
+                <div class="producto-card" id="adidas-2">
+                    <div class="producto-imagen">
+                        <img src="https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1025&q=80" alt="Adidas Superstar">
+                        <span class="badge-oferta">-10%</span>
+                    </div>
+                    <div class="producto-info">
+                        <h3 class="producto-marca">Adidas</h3>
+                        <h4 class="producto-modelo">Superstar</h4>
+                        <p class="producto-descripcion">Las icónicas zapatillas con puntera de concha</p>
+                        <div class="producto-especificaciones">
+                        </div>
+                        <div class="producto-precio">
+                            <span class="precio-actual">Q350.80</span>
+                        </div>
+                        <a href="#modal-adidas-2" class="btn-detalles">Ver detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>Estilo Urbano</h2>
+                <p>Moda que define tu estilo.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Enlaces</h3>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="calzado.html">Calzado</a></li>
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Síguenos</h3>
+                <a href="#"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="#"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="#"><i class="fab fa-tiktok"></i> TikTok</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Braken | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>

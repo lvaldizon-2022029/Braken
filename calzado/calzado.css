@@ -1,0 +1,278 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: rgba(0, 0, 0, 0.0.5);
+    color: #ccd0cf;
+    transition: top 0.4s ease;
+    z-index: 1000;
+}
+
+body:hover header {
+    top: 0;
+}
+
+.nav-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: #ccd0cf;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #7b7f85;
+}
+
+.hero-calzado {
+    height: 60vh;
+    background-image: url("https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.hero-overlay {
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-overlay h2 {
+    color: #ccd0cf;
+    font-size: 48px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+.hero-overlay p {
+    color: #ccd0cf;
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.filtros-marcas {
+    background-color: #161617;
+    padding: 30px 0;
+    border-bottom: 1px solid #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.filtros-marcas h3 {
+    color: #ccd0cf;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.marcas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.marca-btn {
+    background-color: #2a2a2b;
+    color: #ccd0cf;
+    border: 1px solid #444;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.marca-btn:hover {
+    background-color: #3a3a3b;
+}
+
+.marca-btn.active {
+    background-color: #c59d5f;
+    color: #161617;
+}
+
+
+.productos-calzado {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.producto-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.producto-card:hover {
+    transform: translateY(-10px);
+}
+
+.producto-imagen {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-nuevo,
+.badge-oferta,
+.badge-popular {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+.badge-nuevo { background: #c59d5f; }
+.badge-oferta { background: #e74c3c; }
+.badge-popular { background: #3498db; }
+
+.producto-info {
+    padding: 20px;
+}
+
+.producto-info h3 {
+    font-size: 14px;
+    color: #888;
+}
+
+.producto-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.producto-info p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.producto-precio {
+    margin-bottom: 15px;
+}
+
+.precio-actual {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.precio-anterior {
+    text-decoration: line-through;
+    color: #999;
+    margin-left: 10px;
+}
+
+.btn-detalles {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #161617;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.btn-detalles:hover {
+    background: #c59d5f;
+}
+
+
+.footer {
+    background-color: #161617;
+    color: #ccd0cf;
+    padding: 40px 0 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer a {
+    color: #ccd0cf;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #333;
+    padding-top: 10px;
+    font-size: 13px;
+}
