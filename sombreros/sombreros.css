@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background:
+        linear-gradient(rgba(20, 20, 30, 0.65), rgba(20, 20, 30, 0.80)),
+        url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* ========== TOPBAR ========== */
+
+.topbar {
+    background: #151518;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 40px;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 22px;
+    letter-spacing: 1px;
+}
+
+.topbar nav a {
+    color: #cbd5f1;
+    margin-left: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+.topbar nav a.active,
+.topbar nav a:hover {
+    color: #60a5fa;
+}
+
+/* ========== HERO ========== */
+
+.hero {
+    text-align: center;
+    color: #e5e7eb;
+    padding: 50px 20px 30px;
+    animation: fadeDown 0.8s ease;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.hero p {
+    margin-top: 10px;
+    opacity: 0.9;
+}
+
+/* ========== GRID ========== */
+
+.contenedor {
+    max-width: 1200px;
+    margin: 30px auto 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    padding: 30px;
+}
+
+/* ========== CARD ========== */
+
+.card {
+    background: linear-gradient(180deg, #2b2626, #5f5959);
+    border-radius: 18px;
+    padding: 22px;
+    text-align: center;
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.30);
+    transition: all 0.3s ease;
+    position: relative;
+    animation: fadeUp 0.7s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.40);
+}
+
+/* ========== IMAGEN PRODUCTO ========== */
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    padding: 20px;
+    margin-bottom: 16px;
+
+    background:
+        radial-gradient(circle at top, #ffffff, #e5e7eb);
+    border-radius: 16px;
+
+    border: 1px solid rgba(0, 0, 0, 0.06);
+
+    box-shadow:
+        inset 0 8px 18px rgba(0, 0, 0, 0.08),
+        0 8px 20px rgba(0, 0, 0, 0.18);
+
+    transition: all 0.35s ease;
+}
+
+
+.card:hover img {
+    transform: scale(1.08);
+    box-shadow:
+        inset 0 10px 22px rgba(0, 0, 0, 0.10),
+        0 12px 28px rgba(0, 0, 0, 0.25);
+}
+
+/* ========== TEXTOS ========== */
+
+.card h3 {
+    margin: 10px 0 6px;
+    color: white;
+    font-size: 18px;
+}
+
+/* ========== DESCRIPCION ========== */
+
+.desc {
+    font-size: 15px;
+    font-weight: 600;
+    color: #e2e8f0;
+    border-left: 4px solid #000000;
+    padding-left: 10px;
+    margin: 8px 0 14px;
+    text-align: left;
+    line-height: 1.35;
+}
+
+/* ========== PRECIOS ========== */
+
+.precioNegro {
+    font-size: 22px;
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 14px;
+}
+
+.precioDorado {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d4af37;
+    margin-bottom: 14px;
+}
+
+.precioAzul {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3b82f6;
+    margin-bottom: 14px;
+}
+
+.precioMorado {
+    font-size: 22px;
+    font-weight: bold;
+    color: #a855f7;
+    margin-bottom: 14px;
+}
+
+/* ========== BOTON ========== */
+
+button {
+    background: linear-gradient(90deg, #0f172a, #1e293b);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2563eb, #22c55e);
+    transform: scale(1.08);
+}
+
+/* ========== BADGES ========== */
+
+.badge {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: white;
+    font-size: 12px;
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-weight: bold;
+}
+
+.nuevo {
+    background: #111;
+}
+
+.top {
+    background: #f59e0b;
+}
+
+.premium {
+    background: #8b5cf6;
+}
+
+.deportivo {
+    background: #2563eb;
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+    text-align: center;
+    color: #000000;
+    padding: 30px;
+    font-size: 13px;
+}
+
+/* ========== ANIMACIONES ========== */
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
